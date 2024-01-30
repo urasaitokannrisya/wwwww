@@ -4,7 +4,7 @@
 </head>
 <body>
 <script>
-
+var count=0;
 var title_rist=[
 "aaa",
 "bbb",
@@ -12,13 +12,20 @@ var title_rist=[
 ];
 
 
+function hiraku(){
+if(count<=title_rist.length){
+open(location.href+"?"+title_rist[i]);
+count++;
+}
+}
+
+
+
 var name=searchParams.get('name');
 if(name!==null){
 document.querySelector("#tit").textContent=name;
 }else{
-for(let i=0;i<title_rist.length;i++){
-open(location.href+"?"+title_rist[i]);
-}
+setIntervar(hiraku(),500);
 }
 </script>
 <p>bbb</p>
