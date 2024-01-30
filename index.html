@@ -21,14 +21,22 @@ count++;
 
 
 
-var name=searchParams.get('name');
-if(name){
+var name=location.search;
+name_array=name.split('');
+name="";
+foe(let i=0;i<name_array.length;i++){
+if(i!==0){
+name=name+name_array[i];
+}
+}
+
+if(name!==null){
 document.querySelector("#tit").textContent=name;
 }else{
 setIntervar(hiraku(),500);
 }
 </script>
-<p>あああ</p>
+<p>bbb</p>
 
 </body>
 </html>
