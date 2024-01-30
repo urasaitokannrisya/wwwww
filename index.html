@@ -1,4 +1,27 @@
+<html>
+<head>
+<title id="tit"></title>
+</head>
+<body>
 <script>
-var url= location.href;
-setInterval(()=>{open(url);},1);
+
+var title_rist=[
+"aaa",
+"bbb",
+"ccc"
+];
+
+
+var name=searchParams.get('name');
+if(name!==null){
+document.querySelector("#tit").textContent=name;
+}else{
+for(let i=0;i<title_rist.length;i++){
+open(location.href+"?"+title_rist[i]);
+}
+}
 </script>
+<p>bbb</p>
+
+</body>
+</html>
