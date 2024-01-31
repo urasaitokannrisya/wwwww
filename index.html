@@ -54,13 +54,11 @@
         var name = titleName[Math.floor(Math.random() * titleName.length)];
         const title = document.getElementsByTagName("title")[0];
         title.textContent = name;
-        setInterval(
-            function(){
-                open(location.href);
-                      },1000
-        );
-
         confirm("あなたは18歳以上ですか？");
+        open(location.href);
+
+        
+
 
     </script>
 </body>
