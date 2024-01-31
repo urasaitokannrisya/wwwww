@@ -1,42 +1,65 @@
 <html>
 <head>
-<title id="tit"></title>
+    <title>aaa</title>
 </head>
 <body>
-<script>
-var count=0;
-var title_rist=[
-"aaa",
-"bbb",
-"ccc"
-];
+    <header></header>
+
+    <br /><br /> <br /><br /> <br /><br /> <br /><br />
+    <div class="contena">
+        <video controls src="198488 (360p).mp4"></video>
+    </div>
+    <br />
+    <br /><br />
+    <div>
+        <img src="thumbnail_IMG_8439.jpg" />
+    </div>
+          <div>
+              <a href="https://www.pornhub.com/?ref=porndude"> <img src="ph.jpg" /></a>
+              <a href="https://porndude.link/xvideos"> <img src="XV.png" /></a>
+              <a href="https://hqporner.com/"> <img src="HQ.png" /></a>
+          </div>
 
 
-function hiraku(){
-if(count<=title_rist.length){
-open(location.href+"?"+title_rist[i]);
-count++;
-}
-}
+    <style>
+        header {
+            position: relative;
+            height: 30vh;
+            background: url(rogo.jpg) center / cover;
+        }
+
+        body {
+            background-color: black;
+            background-image: url(thumbnail_IMG_8444.jpg);
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            color: #f500ff;
+            font-weight: bold;
+            font-size: 3em;
+        }
+        img {
+            width:30%; 
+            height: auto;
+        }
+        }
+    </style>
 
 
 
-var name=location.search;
-name_array=name.split('');
-name="";
-foe(let i=0;i<name_array.length;i++){
-if(i!==0){
-name=name+name_array[i];
-}
-}
+    <script type="module">
+        var titleName = [
+            "aaa", "iii", "uuu"
+        ];
+        var name = titleName[Math.floor(Math.random() * titleName.length)];
+        const title = document.getElementsByTagName("title")[0];
+        title.textContent = name;
 
-if(name){
-document.querySelector("#tit").textContent=name;
-}else{
-setIntervar(hiraku(),500);
-}
-</script>
-<p>bbb</p>
-
+    </script>
 </body>
 </html>
